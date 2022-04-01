@@ -51,4 +51,5 @@ public class Adapter_listsong extends BaseAdapter {
         txt_time.setText(mList_songs.get(position).time);
         return convertView;
     }
+    ////////////
 }
