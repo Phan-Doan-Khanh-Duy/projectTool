@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="16dp"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Activity_song">
+
+    <TextView
+        android:id="@+id/txt_singer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:fontFamily="serif"
+        android:text="Singer Name"
+        android:textAlignment="center"
+        android:textColor="#0000ff"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <ListView
+        android:id="@+id/list_music"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+    </ListView>
+    <TextView
+        android:id="@+id/txt_playing"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:fontFamily="serif"
+        android:text="PLAYING:"
+        android:textColor="#0000ff"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_weight="0.5" >
+        <TextView
+            android:id="@+id/txt_time_play"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:id="@+id/txt_time_out"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="textEnd" />
+
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/seebar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+        <LinearLayout
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="90dp"
+            android:weightSum="3"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <ImageButton
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_rewind"
+                android:id="@+id/bt_re"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                tools:ignore="NestedWeights"/>
+            <ImageButton
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_play"
+                android:id="@+id/bt_pause"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                tools:ignore="NestedWeights"/>
+
+            <ImageButton
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_fast_forward"
+                android:id="@+id/bt_next"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                tools:ignore="NestedWeights"/>
+
+
+        </LinearLayout>
+</LinearLayout>
