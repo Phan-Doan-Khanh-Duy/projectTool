@@ -10,7 +10,7 @@
         android:layout_height="100dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true" />
-
+//////////////
     <TextView
         android:id="@+id/txt_singer"
         android:textColor="#00ced1"
