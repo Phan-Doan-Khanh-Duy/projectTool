@@ -53,4 +53,5 @@ public class Adapter_singer extends BaseAdapter {
 
         return convertView;
     }
+    ///////////
 }

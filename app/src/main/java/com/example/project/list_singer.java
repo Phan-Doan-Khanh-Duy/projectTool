@@ -8,4 +8,5 @@ public class list_singer {
         this.name_singer = name_singer;
         this.img_singer = img_singer;
     }
+    ////////
 }
